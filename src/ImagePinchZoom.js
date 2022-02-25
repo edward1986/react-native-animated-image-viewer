@@ -400,7 +400,7 @@ export default class ImagePinchZoom extends React.Component {
   render () {
     const color = this.opacity.interpolate({
       inputRange: [0, 100],
-      outputRange: ['rgba(0, 0, 0, 1)', 'rgba(0, 0, 0, 0)']
+      outputRange: ['rgba(0, 0, 0, 0.5)', 'rgba(0, 0, 0, 0)']
     });
     const animateConf = {
       position: 'absolute',
