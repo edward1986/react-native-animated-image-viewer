@@ -428,7 +428,7 @@ export default class ImagePinchZoom extends React.Component {
     return (
       <View {...this.imagePanResponder.panHandlers}>
         <Animated.View style={style}>
-          <Animated.View style={animateConf}>
+         <Animated.View style={[animateConf, {justifyContent: "center", flex: 1, alignItems: "center", width: "100%"}]}>
             <View
               style={{
                 width: this.props.imageWidth,
